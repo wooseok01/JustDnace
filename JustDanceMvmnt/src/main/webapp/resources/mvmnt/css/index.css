@@ -1,0 +1,238 @@
+@CHARSET "UTF-8";
+
+html{
+	width: 100%;
+	height: 1800px;
+}
+body{
+	width: 100%;
+	height : 100%;
+}
+
+#main-info-page{
+	width : 100%;
+	height : 50%;
+	position : relative;
+	overflow: hidden;
+}
+
+#bgPlayer{
+	width : 100%;
+	height : 100%;
+	top : 0;
+	position : absolute;
+}
+
+#video{
+	width : auto;
+	height : auto;
+	
+	min-width: 100%; 
+  	min-height: 100%;
+  	
+	display: block;
+	
+	overflow: hidden;
+	position : absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	
+	z-index : 1;
+}
+
+#nav-fixed{
+	width: 100%;
+	height: 50px;
+	
+	padding-top: 30px;
+	
+	position: fixed;
+	
+	color : white;
+	font-size: 25px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#nav-fixed>span:HOVER{
+	cursor: pointer;
+}
+
+.layerFirst{
+	z-index: 999;
+}
+
+#mainNav{
+	display
+}
+
+#menuIcon{
+	width : 25px;
+	height : 25px;
+	display: inline-block;
+	
+	margin-left: 30px;
+	position : absolute;
+	left: 30px;
+}
+
+#menuIcon:HOVER{
+	cursor: pointer;
+}
+
+#moreIcon{
+	width: 50px;
+	height: 50px;
+	
+	border: 2px solid black;
+	border-radius: 100% !important;
+	color: white;
+	margin: 0 auto;
+}
+
+#icon-container{
+	position : absolute;
+	width : 100%;
+	height : 50px;
+	z-index: 999;
+	
+	bottom: 50px;
+}
+
+#icon-section{
+	width : 50px;
+	height : 50px;
+	
+	margin : 0 auto;
+	
+	border: 2px solid white;
+	border-radius : 100%;
+}
+
+#icon{
+	font-size: 40px;
+	margin-left : 12px;
+	margin-top : 5px;
+	color : white;
+	width : 100%;
+	height : 100%;
+}
+
+#icon:HOVER{
+	cursor: pointer;
+}
+
+#toggleMenu{
+	width : 100px;
+	height: 150px;
+	margin-left: 60px;
+	
+	text-align: left;
+	display: none;
+}
+
+#toggleMenu>ul{
+	padding-left: 0px;
+	margin : 0;
+	
+}
+
+#toggleMenu>ul>li{
+	list-style: none;
+	color: white;
+}
+
+#toggleMenu>ul>li>a{
+	color: white;
+	font-size: 15px;
+	text-decoration: none;
+}
+
+
+#photo-section{
+	width: 80%;
+	height : 1300px;
+	max-width: 1000px;
+	
+	margin: 0 auto;
+}
+
+#photo-section-title{
+	height : 200px;
+	line-height: 300px;
+	font-size : 40px;
+	text-align: center;
+	vertical-align: bottom;
+}
+
+#photo-section-devide{
+	height : 150px;
+	line-height : 100px;
+	font-size : 40px;
+	text-align: center;
+}
+
+#image-rolling-banner{
+	width : 100%;
+	height : 500px;
+	
+	position : relative;
+	overflow: hidden;
+}
+
+#image-rolling-banner>div{
+	position : absolute;
+}
+
+#image-rolling-banner>div>img{
+	width : 100%;
+	height : 100%;
+	position : absolute;
+	z-index: 1;
+}
+
+#leftIconArea{
+	width : 50px;
+	height : 100%;
+	
+	display: table-cell;
+	position : absolute;
+	z-index : 999;
+}
+
+#prev, #next{
+	width : 50px;
+	height : 100%;
+	background-color: rgba(64,64,64, 0.6);
+	
+	margin : 0 auto;
+	text-align: center;
+	
+	position : absolute;
+	
+	display: table-cell;
+	vertical-align: middle;
+}
+#prev>img{
+	margin: auto;
+	
+}
+#next{
+
+}
+
+#prev:HOVER {
+	cursor: pointer;
+}
+
+#next:HOVER {
+	cursor : pointer;
+}
+
+footer{
+	width : 100%;
+	height : 80px;
+	
+	background-color: #7f7f7f;
+}
