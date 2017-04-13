@@ -4,17 +4,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+	<link rel="stylesheet" href="resources/mvmnt/css/header.css">
+	<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+	<link rel="stylesheet" 
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="resources/mvmnt/js/header.js"></script>
 </head>
 <body>
 	<nav id="nav-fixed" class="layerFirst">
-			<img id="menuIcon" alt="menu-icon" src="resources/mvmnt/images/menu-white.png" active="no"> 
+			<img id="menuIcon" alt="menu-icon" 
+			src="resources/mvmnt/images/header/menu-white.png" active="no"> 
 			<span onclick="moveToMainPage()">JUSTDANCEMVMNT</span>
 			<div id="toggleMenu">
 				<ul>
 					<li><a href="/mvmnt">Home</a></li>
-					<li><a href="#">About</a></li>
+					<li><a href="./about">About</a></li>
 					<li><a href="#">Archive</a></li>
 					<li><a href="#">Dancers</a></li>
 					<li><a href="#">Contact</a></li>
