@@ -86,5 +86,5 @@ function headerColorChange(){
 }
 
 function moveToMainPage(){
-	location.href = 'http://localhost:8080/mvmnt/';
+	location.href = '/mvmnt/';
 }
