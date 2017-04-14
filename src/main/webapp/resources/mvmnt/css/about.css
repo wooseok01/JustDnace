@@ -89,9 +89,108 @@ html,body{
 
 
 #text-area{
+	width : 80%;
+	height : 1000px;
+	
+	margin: 0 auto;
+	margin-top: 30px;
+	
+	font-family: "Calibre Light",arial,sans-serif;
+	
+}
+
+#text-area > div{
+	float : left;
+	width : 49%;
+	height : 100%;
+}
+
+#text-right{
+	padding-left: 2%;
+}
+
+.text-title{
+	text-align: center;
+	line-height : 18px;
+	letter-spacing: 3px;
+	
+	font-size: 15px;
+	font-weight: 10px;
+	font-style: italic;
+}
+
+.text-divide{
+	margin-top: 10px;
+	
+	text-align: center;
+	font-size: 40px;
+	line-height: 20px;
+	
+	font-weight: lighter;
+}
+
+
+.text-second-title{
+	width : 100%;
+	
+	margin-top : 10px;
+	
+	text-align: center;
+	font-size: 15px;
+	
+}
+.text-description{
+	text-align: left;
+	font-size: 11px;
+	line-height : 15px;
+	
+	margin-top : 20px;
+}
+
+.text-movie-data{
 	width : 100%;
 	height : auto;
 	
+	margin-top : 20px;
+	
+	position : relative;
+}
+
+.text-movie-data>img{
+	width : 100%;
+	position: absolute;
+}
+
+.text-movie-data>img:HOVER {
+	cursor: pointer
+}
+
+.video-icon{
+	width : 48px !important;
+	height : 48px !important;
+	
+	margin: 0 auto;
+}
+
+.text-movie-small-description{
+	width : 100%;
+	
+	color : #808080;
+	text-align: center;
+	font-size: 8px;
+	font-style: italic;
+	
+	margin-top : 5px;
+}
+
+.text-movie-large-description{
+	width : 100%;
+	
+	margin-top : 20px;
+	
+	text-align: left;
+	font-size : 11px;
+	line-height : 15px;
 }
 
 
