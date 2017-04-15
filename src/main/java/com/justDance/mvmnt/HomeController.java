@@ -32,4 +32,19 @@ public class HomeController {
 		
 		return "/mvmnt/about";
 	}
+	
+	@RequestMapping(value="/archive", method = RequestMethod.GET)
+	public String archive(){
+		return "/mvmnt/archive";
+	}
+	
+	@RequestMapping(value="/dancers", method = RequestMethod.GET)
+	public String dancers(){
+		return "/mvmnt/dancers";
+	}
+	
+	@RequestMapping(value="/contact", method = RequestMethod.GET)
+	public String contact(){
+		return "mvmnt/contact";
+	}
 }

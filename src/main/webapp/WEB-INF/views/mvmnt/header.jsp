@@ -20,9 +20,9 @@
 				<ul>
 					<li><a href="/mvmnt">Home</a></li>
 					<li><a href="./about">About</a></li>
-					<li><a href="#">Archive</a></li>
-					<li><a href="#">Dancers</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="./archive">Archive</a></li>
+					<li><a href="./dancers">Dancers</a></li>
+					<li><a href="./contact">Contact</a></li>
 				</ul>
 			</div>
 		</nav>

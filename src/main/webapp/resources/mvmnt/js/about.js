@@ -18,23 +18,6 @@ $(document).ready(function(){
 	}, function(){
 		$(this).find('.video-icon').attr('src','resources/mvmnt/images/about/video-white.png');
 	});
-	
-//	$('.text-movie-data').YouTubePopup({
-//		autoplay : 0,
-//		draggable : false,
-//		youtubeId : getYoutubeId($(this).find('.urlValue').val()),
-//		title : 'bbbb'
-//	});
-	
-	$('.text-movie-data').click(function(){
-		var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/;
-		var url = $(this).find('.urlValue').val();
-		var youtubeId = url.match(regExp);
-		
-		
-		
-	});
-	
 });
 
 function isLoad(img){

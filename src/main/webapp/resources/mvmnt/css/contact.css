@@ -1,0 +1,203 @@
+@CHARSET "UTF-8";
+
+html,body{
+	width : 100%;
+}
+
+#intro-contact{
+	width : 100%;
+	height : auto;
+	padding-top : 150px;
+}
+
+#intro-contact>div:FIRST-CHILD{
+	line-height: 40px;
+}
+
+#intro-contact > div{
+	width : 100%;
+	height : 80px;
+	text-align: center;
+	font-size: 40px;
+}
+
+#contact-section{
+	width : 80%;
+	margin : 0 auto;
+}
+
+#contact-information{
+	width : 100%;
+	height : 100px;
+	margin-bottom : 100px;
+}
+
+#contact-information>div{
+	float : left;
+	width : 24%;
+	height : 100%;
+	
+	border-right: 1px solid #7f7f7f;
+	
+}
+
+#contact-information>div>div{
+	width : 80%;
+	height : 100%;
+	padding-left: 20px;
+	margin : 0 auto;
+	margin-top : 20px;
+	margin-bottom: 30px;
+	
+	font-size: 12px;
+	line-height: 18px;
+}
+
+#contact-information>div>div>span{
+	text-decoration: underline;
+}
+
+#contact-information>div:FIRST-CHILD {
+	width : 50%;
+	padding: 0px;
+}
+
+#contact-information>div:FIRST-CHILD>div{
+	width : 90%;
+	margin-left : 0px;
+	padding-left: 0px;
+}
+
+input{
+	border : none;
+}
+
+#contact-write-form{
+	width : 100%;
+	height : 300px;
+	margin-bottom: 30px;
+}
+
+#nameAndEmail, #onlyTitle{
+	width : 100%;
+	height: 30px;
+	margin-bottom : 10px;
+}
+
+#nameAndEmail > div{
+	float : left;
+}
+
+#nameForm, #emailForm, #titleForm{
+	width : 47%;
+	margin-right: 6%;
+	margin-bottom: 10px;
+	border-bottom: 2px solid #7f7f7f;
+	
+}
+
+#titleForm{
+	width : 100%;
+	margin-right : 0px;
+}
+
+#emailForm{
+	margin-right : 0px;
+}
+
+.formLabel{
+	width : 40px;
+	
+	font-size: 14px;
+	font-weight: bold;
+	
+	display: inline-block;
+}
+
+#nameForm>input, #emailForm>input, #titleForm>input{	
+	font-size: 14px;
+	font-weight: lighter;
+	
+	display: inline-block;
+}
+
+#onlyMessage{
+	width : 100%;
+	height : 150px;
+	
+	border-bottom: 2px solid #7f7f7f;
+	
+	vertical-align: top;
+}
+
+#messageForm{
+	width : 100%;
+	height : 100%;
+	
+}
+
+#messageForm > div{
+	width : 40px;
+	height : 100%;
+	
+	font-size : 14px;
+	font-weight: bold;
+	
+	float : left;
+}
+
+#message{
+	height : 97%;
+	border : none;
+	resize : none;
+	
+	font-size : 14px;
+	font-weight: lighter;
+}
+
+#sendBtn{
+	width : 100%;
+	height : 40px;
+	
+	background-color: white;
+	
+	display : block;
+}
+
+#sendBtn:HOVER {
+	color : #7f7f7f;
+}
+
+#googleMap{
+	width : 100%;
+	height : 400px;
+	
+	margin-bottom : 25px;
+}
+
+#map-description{
+	width : 100%;
+	height : 100px;
+}
+
+#map-description>div{
+	height : 100%;
+	
+	float : left;
+	
+	font-size : 12px;
+	color : #7f7f7f;
+}
+
+#company-description{
+	width : 30%;
+}
+
+#address-description{
+	width : 45%;
+}
+
+#email-description{
+	width : 25%;
+	text-align: right;
+}
