@@ -72,7 +72,7 @@
 				<div class="text-movie-data">
 					<img class="youtube" rel="QjOCXcZ_r3w" alt="player-thumnail" onload="onLoadMovieThumnail(this);"
 					src="resources/mvmnt/images/index/bgPicture.png">
-					<img alt="player-white" class="video-icon" onload="fitVideoIconMiddle(this);" 
+					<img alt="player-white" rel="QjOCXcZ_r3w" class="video-icon" onload="fitVideoIconMiddle(this);" 
 					src="resources/mvmnt/images/about/video-white.png">
 					<input type="hidden" class="urlValue" value="https://www.youtube.com/watch?v=QjOCXcZ_r3w&t=2s">
 				</div>
@@ -90,7 +90,7 @@
 				<div class="text-movie-data">
 					<img class="youtube" rel="QjOCXcZ_r3w" alt="player-thumnail" onload="onLoadMovieThumnail(this);"
 					src="resources/mvmnt/images/index/bgPicture.png">
-					<img alt="player-white" class="video-icon" onload="fitVideoIconMiddle(this);" 
+					<img alt="player-white" rel="QjOCXcZ_r3w" class="video-icon" onload="fitVideoIconMiddle(this);" 
 					src="resources/mvmnt/images/about/video-white.png">
 					<input type="hidden" class="urlValue" value="https://www.youtube.com/watch?v=QjOCXcZ_r3w&t=2s">
 				</div>
