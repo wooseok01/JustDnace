@@ -5,7 +5,6 @@ $(document).ready(function(){
 	var rollingWidth = $('#image-rolling-banner').width();
 	var rollingHeight = $('#image-rolling-banner').height();
 	$('#image-rolling-banner>ul>li').css('width', rollingWidth);
-	//$('#prev>img, #next>img').css('margin-top', rollingHeight*1/2-16);
 	
 	
 	$('#next').css('left', rollingWidth*1-50);
@@ -30,6 +29,7 @@ $(document).ready(function(){
 		$('#main-info-page').height(height);
 		$('#image-rolling-banner').height(imageHeight);
 		fitArrowIcon(imageHeight);
+		
 	});
 	
 });

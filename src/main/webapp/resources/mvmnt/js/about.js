@@ -19,6 +19,8 @@ $(document).ready(function(){
 	}, function(){
 		$(this).find('.video-icon').attr('src','resources/mvmnt/images/about/video-white.png');
 	});
+	
+	headerBackground();
 });
 
 function isLoad(img){

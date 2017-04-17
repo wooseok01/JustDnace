@@ -33,23 +33,23 @@
 		<div id="contact-write-form">
 			<div id="nameAndEmail">
 				<div id="nameForm">
-					<label class="formLabel">이름</label>
+					<label class="formLabel">Name</label>
 					<input type="text" id="name" class="input">
 				</div>
 				<div id="emailForm">
-					<label class="formLabel">이메일</label>
+					<label class="formLabel">Email</label>
 					<input id="email" type="text" class="input">
 				</div>
 			</div>
 			<div id="onlyTitle">
 				<div id="titleForm">
-					<label class="formLabel">제목</label>
+					<label class="formLabel">Title</label>
 					<input id="title" type="text" class="input">
 				</div>
 			</div>
 			<div id="onlyMessage">
 				<div id="messageForm">
-					<div id="labelDiv">메세지</div>
+					<div id="labelDiv">Message</div>
 					<textarea rows="5" cols="20" id="message" draggable="false" ></textarea>
 				</div>
 			</div>

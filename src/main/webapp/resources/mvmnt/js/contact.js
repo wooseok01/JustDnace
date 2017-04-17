@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	headerBackground();
 	$('#menuIcon').attr('src','resources/mvmnt/images/header/menu-black.png');
 	$('#nav-fixed>span').css('color', 'black');
 	
@@ -18,6 +19,7 @@ $(document).ready(function(){
 	
 	$('#message').width(parentWidth - labelWidth - 10);
 	googleMapInit();
+	
 });
 
 

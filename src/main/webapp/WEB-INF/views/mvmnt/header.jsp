@@ -15,7 +15,7 @@
 	<nav id="nav-fixed" class="layerFirst">
 			<img id="menuIcon" alt="menu-icon" 
 			src="resources/mvmnt/images/header/menu-white.png" active="no"> 
-			<span onclick="moveToMainPage()">JUSTDANCEMVMNT</span>
+			<span onclick="moveToMainPage()">JUSTDANCEMVMT</span>
 			<div id="toggleMenu">
 				<ul>
 					<li><a href="/mvmnt">Home</a></li>

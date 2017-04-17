@@ -5,4 +5,10 @@ $(document).ready(function(){
 	$('#menuIcon').click(menuIconClick);
 	
 	headerBackground();
+	
+	$('.dancer-img').each(function(){
+		var imageHeight = $(this).parent().height()*1;
+		$(this).parent().find('div').css('padding-top' ,imageHeight/2-12);
+	});
+
 });

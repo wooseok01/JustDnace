@@ -14,6 +14,7 @@
 <script type="text/javascript" src="resources/mvmnt/js/index.js"></script>
 </head>
 <body>
+	<input type="hidden" id="hiddenVal" value="hidden">
 	<jsp:include page="header.jsp"></jsp:include>
 	<div id="main-info-page">
 		<div id="bgPlayer">
@@ -35,20 +36,17 @@
 		<div id="image-rolling-banner">
 			<div class="cycle-slideshow"
 				data-cycle-fx="scrollHorz" 
-				data-cycle-timeout="0"
-				data-cycle-prev="#prev"
-				data-cycle-next="#next">
+				data-cycle-timeout="0">
 				<img alt="" src="resources/mvmnt/images/index/bgPicture.png" onload="isLoad(this);">			
-				<img alt="" src="resources/mvmnt/images/index/rolpic1.png" onload="isLoad(this);">			
 			</div>
-			<div id="leftIconArea">
+			<!-- <div id="leftIconArea">
 				<div id="prev">
 					<img alt="left-icon" src="resources/mvmnt/images/index/left-arrow.png">
 				</div>
 				<div id="next">
 					<img alt="right-arrow" src="resources/mvmnt/images/index/right-arrow.png">
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</div>
 	

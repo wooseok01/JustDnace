@@ -83,8 +83,23 @@ function headerColorChange(){
 		}
 		$('#toggleMenu>ul>li>a').css('color','white');
 	}
+	
+	var hiddenVal = $('#hiddenVal').val();
+	if(hiddenVal == 'hidden'){
+		if(pos + 45 >= mainHeight)
+			$('#nav-fixed').css('background-color', 'white');
+		else
+			$('#nav-fixed').css('background-color', 'transparent');
+	}
 }
 
 function moveToMainPage(){
 	location.href = '/mvmnt/';
+}
+
+function headerBackground(){
+	$('#nav-fixed').css({
+		'background-color': 'white',
+		'height' : '50px'
+	});
 }
