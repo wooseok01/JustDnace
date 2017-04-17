@@ -23,6 +23,7 @@ html,body{
 
 #contact-section{
 	width : 80%;
+	max-width : 950px;
 	margin : 0 auto;
 }
 

@@ -37,16 +37,8 @@
 			<div class="cycle-slideshow"
 				data-cycle-fx="scrollHorz" 
 				data-cycle-timeout="0">
-				<img alt="" src="resources/mvmnt/images/index/bgPicture.png" onload="isLoad(this);">			
+				<img alt="" src="resources/mvmnt/images/index/home-pic.png" onload="isLoad(this);">			
 			</div>
-			<!-- <div id="leftIconArea">
-				<div id="prev">
-					<img alt="left-icon" src="resources/mvmnt/images/index/left-arrow.png">
-				</div>
-				<div id="next">
-					<img alt="right-arrow" src="resources/mvmnt/images/index/right-arrow.png">
-				</div>
-			</div> -->
 		</div>
 	</div>
 	

@@ -1,6 +1,7 @@
 package com.justDnace.mvmt.dao;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,6 +27,21 @@ public class DancersDao {
 	public ArrayList<Dancers> getAllDancersInfo() {
 		
 		return sqlSession.getMapper(DancersInterface.class).getAllDancersInfo();
+	}
+	public ArrayList<String> getCareerList(String name) {
+		int bId = getBid(name);
+		return sqlSession.getMapper(DancersInterface.class).getCareerList(bId);
+	}
+	public int getBid(String name){
+		return sqlSession.getMapper(DancersInterface.class).getBid(name);
+	}
+	public Dancers getPersonalData(String name) {
+		int bId = getBid(name);
+		return sqlSession.getMapper(DancersInterface.class).getPersonalData(bId);
+	}
+	public ArrayList<String> getEducationData(String name) {
+		int bId = getBid(name);
+		return sqlSession.getMapper(DancersInterface.class).getEducationData(bId);
 	}
 	
 	

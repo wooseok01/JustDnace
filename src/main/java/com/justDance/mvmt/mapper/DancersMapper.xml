@@ -3,8 +3,34 @@
 
 <mapper namespace="com.justDance.mvmt.mapper.interfaces.DancersInterface">
 	
+	
 	<select id="getAllDancersInfo" resultType="Dancers">
-		SELECT * FROM Dancers;
+		SELECT * FROM dancers;
+	</select>
+	
+	<select id="getBid" parameterType="String" resultType="Integer">
+		SELECT bId FROM dancers 
+		WHERE bName = #{name};
+		
+	</select>
+	
+	<select id="getCareerList" parameterType="Integer" resultType="String">
+		SELECT cDescription FROM career  
+		where bId = #{bId};
+	</select>
+	
+	<select id="getPersonalData" parameterType="Integer" resultType="Dancers">
+		SELECT bDescription, bTitle, bFileName FROM dancers
+		<where>
+			bId = #{bId};
+		</where>
+	</select>
+	
+	<select id="getEducationData" parameterType="String" resultType="String">
+		SELECT eDescription FROM education 
+		<where>
+			bId = #{bId};
+		</where>
 	</select>
 	
 </mapper>

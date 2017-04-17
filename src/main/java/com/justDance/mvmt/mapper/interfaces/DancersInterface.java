@@ -8,4 +8,12 @@ public interface DancersInterface {
 
 	ArrayList<Dancers> getAllDancersInfo();
 
+	int getBid(String name);
+
+	ArrayList<String> getCareerList(int bId);
+
+	Dancers getPersonalData(int bId);
+
+	ArrayList<String> getEducationData(int bId);
+
 }
