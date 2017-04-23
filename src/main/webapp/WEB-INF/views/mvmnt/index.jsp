@@ -15,6 +15,7 @@
 </head>
 <body>
 	<input type="hidden" id="hiddenVal" value="hidden">
+	<input type="hidden" id="is-main" value="yes">
 	<jsp:include page="header.jsp"></jsp:include>
 	<div id="main-info-page">
 		<div id="bgPlayer">
@@ -30,7 +31,7 @@
 		</div>
 	</div>
 	<div id="photo-section">
-		<div id="photo-section-title">JUSTDANCEMVMNT</div>
+		<div id="photo-section-title">MVMT</div>
 		<div id="photo-section-devide">-</div>
 		
 		<div id="image-rolling-banner">

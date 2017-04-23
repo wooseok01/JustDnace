@@ -14,7 +14,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.justDance.mvmt.action.EmailSender;
 import com.justDance.mvmt.model.Dancers;
+import com.justDance.mvmt.model.Email;
 import com.justDnace.mvmt.dao.DancersDao;
 
 import net.sf.json.JSONArray;
@@ -29,9 +31,16 @@ public class HomeController {
 	@Autowired
 	private DancersDao dancersDao;
 	
+	@Autowired
+	private EmailSender emailSender;
 	
 	public DancersDao getDancersDao() {return dancersDao;}
 	public void setDancersDao(DancersDao dancersDao) {this.dancersDao = dancersDao;}
+	
+	public EmailSender getEmailSender() {return emailSender;}
+	public void setEmailSender(EmailSender emailSender) {this.emailSender = emailSender;}
+
+
 
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
@@ -103,5 +112,21 @@ public class HomeController {
 		jsonArr = JSONArray.fromObject(educationList);
 		
 		return jsonArr;
+	}
+	
+	@RequestMapping(value="/sendEmail", method = RequestMethod.POST)
+	@ResponseBody
+	public String sendMail(Email email){
+		email.setMessage("email: "+ email.getEmail()+"\n\n"+email.getMessage());
+		String result = "";
+		try{
+			emailSender.sendEmail(email);
+//			result = "success!";
+			result = "fail!";
+		}catch(Exception e){
+			result = "fail!";
+		}
+		
+		return result;
 	}
 }

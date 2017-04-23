@@ -7,6 +7,7 @@ $(document).ready(function(){
 	$('#menuIcon').attr('src','resources/mvmnt/images/header/menu-black.png');
 	
 	$('#menuIcon').click(menuIconClick);
+	$('#menuIcon, #toggleMenu').hover(menuMouseOver, menuMouseOut);
 	
 	$(window).resize(function(){
 		var imageHeight = $('#rolling-banner>div>img').height();

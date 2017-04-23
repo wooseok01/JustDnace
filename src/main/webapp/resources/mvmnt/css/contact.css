@@ -1,4 +1,5 @@
 @CHARSET "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Palanquin+Dark|Roboto|Ubuntu+Condensed');
 
 html,body{
 	width : 100%;
@@ -8,6 +9,7 @@ html,body{
 	width : 100%;
 	height : auto;
 	padding-top : 150px;
+	font-family: 'Palanquin Dark', sans-serif;
 }
 
 #intro-contact>div:FIRST-CHILD{
@@ -29,28 +31,28 @@ html,body{
 
 #contact-information{
 	width : 100%;
-	height : 100px;
+	height : auto;
 	margin-bottom : 100px;
 }
 
 #contact-information>div{
-	float : left;
-	width : 24%;
-	height : 100%;
 	
-	border-right: 2px solid #7f7f7f;
+	width : 100%;
 	
+}
+#contact-information>div:FIRST-CHILD {
+	width : 100%;
+	padding: 0px;
 }
 
 #contact-information>div>div{
-	width : 80%;
+	width : 100%;
 	height : 100%;
-	padding-left: 20px;
-	margin : 0 auto;
+	
 	margin-top : 20px;
 	margin-bottom: 30px;
 	
-	font-size: 12px;
+	font-size: 15px;
 	line-height: 18px;
 }
 
@@ -58,15 +60,12 @@ html,body{
 	text-decoration: underline;
 }
 
-#contact-information>div:FIRST-CHILD {
-	width : 50%;
-	padding: 0px;
-}
 
 #contact-information>div:FIRST-CHILD>div{
 	width : 90%;
 	margin-left : 0px;
 	padding-left: 0px;
+	font-family: 'Fira Sans', sans-serif;
 }
 
 input{
@@ -77,6 +76,8 @@ input{
 	width : 100%;
 	height : 300px;
 	margin-bottom: 30px;
+	position: relative;
+	z-index : 400;
 }
 
 #nameAndEmail, #onlyTitle{
@@ -109,6 +110,7 @@ input{
 .formLabel{
 	width : 40px;
 	
+	font-family: 'Palanquin Dark', sans-serif;
 	font-size: 14px;
 	font-weight: bold;
 	
@@ -117,7 +119,7 @@ input{
 
 #nameForm>input, #emailForm>input, #titleForm>input{	
 	font-size: 14px;
-	font-weight: lighter;
+	font-family: 'Roboto', sans-serif;
 	
 	display: inline-block;
 }
@@ -141,6 +143,7 @@ input{
 	width : 60px;
 	height : 100%;
 	
+	font-family: 'Palanquin Dark', sans-serif;
 	font-size : 14px;
 	font-weight: bold;
 	
@@ -152,8 +155,8 @@ input{
 	border : none;
 	resize : none;
 	
+	font-family: 'Roboto', sans-serif;
 	font-size : 14px;
-	font-weight: lighter;
 }
 
 #sendBtn{
@@ -169,6 +172,27 @@ input{
 	color : #7f7f7f;
 }
 
+#loading-section{
+	width : 100%;
+	height : 100%;
+	
+	position : absolute;
+	top : 0;
+	
+	z-index : 450;
+	text-align: center;
+	display: none;
+}
+
+#loading-section>img{
+	width : 48px;
+	height : 48px;
+	
+	margin : 0 auto;
+	margin-top : 70px;
+	display : block;
+}
+
 #googleMap{
 	width : 100%;
 	height : 400px;
@@ -179,6 +203,8 @@ input{
 #map-description{
 	width : 100%;
 	height : 100px;
+	
+	font-family: 'Roboto', sans-serif;
 }
 
 #map-description>div{

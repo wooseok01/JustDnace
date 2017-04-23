@@ -1,8 +1,13 @@
+$(function(){
+	$(".youtube").YouTubeModal({autoplay:1, width:480, height:320});
+	$(".video-icon").YouTubeModal({autoplay:1, width:640, height:480});
+});
+
 $(document).ready(function(){
 	$('#menuIcon').attr('src','resources/mvmnt/images/header/menu-black.png');
 	$('#nav-fixed>span').css('color','black');
 	$('#menuIcon').click(menuIconClick);
-	
+	$('#menuIcon, #toggleMenu').hover(menuMouseOver, menuMouseOut);
 	headerBackground();
 	
 	$('.player-thumnail>img').hover(function(){
@@ -11,11 +16,20 @@ $(document).ready(function(){
 		$(this).parent().find('.video-icon').attr('src', 'resources/mvmnt/images/about/video-white.png');
 	});
 	
-	$('.player-thumnail>img').click(function(){
-		$(this).parent().find('iframe').fadeIn('slow');
-		$(this).parent().find('img').fadeOut('slow');
-	});
+	
 });
+
+function descriptionMoreClick(div){
+	var description = $(div).parent().find('.description');
+	
+	if($(div).html() == 'More ▼'){
+		$(div).html('Less ▲');
+		description.css('height','auto');
+	}else{
+		$(div).html('More ▼');
+		description.css('height', '48px');
+	}
+}
 
 function fitXY(image){
 	

@@ -1,4 +1,5 @@
 @CHARSET "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Palanquin+Dark|Ubuntu+Condensed');
 
 html,body{
 	width : 100%;
@@ -13,6 +14,10 @@ html,body{
 	width : 100%;
 	height : auto;
 	padding-top : 150px;
+}
+
+#intro-about{
+	font-family: 'Palanquin Dark', sans-serif;
 }
 
 #intro-about>div:FIRST-CHILD{
@@ -121,6 +126,7 @@ html,body{
 	line-height : 18px;
 	letter-spacing: 3px;
 	
+	font-family: 'Ubuntu Condensed', sans-serif;
 	font-size: 15px;
 	font-weight: 10px;
 	font-style: italic;
@@ -132,7 +138,7 @@ html,body{
 	text-align: center;
 	font-size: 40px;
 	line-height: 20px;
-	
+	font-family: 'Fira Sans', sans-serif;
 	font-weight: lighter;
 }
 
@@ -145,6 +151,9 @@ html,body{
 	text-align: center;
 	font-size: 15px;
 	
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: bold;
+	
 }
 .text-description{
 	text-align: left;
@@ -152,6 +161,7 @@ html,body{
 	line-height : 15px;
 	
 	margin-top : 20px;
+	font-family: 'Fira Sans', sans-serif;
 }
 
 .text-movie-data{

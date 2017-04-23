@@ -1,8 +1,73 @@
 @CHARSET "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Palanquin+Dark|Roboto|Ubuntu+Condensed');
 
 footer{
 	width : 100%;
 	height : 80px;
 	
 	background-color: #7f7f7f;
+}
+
+#footer-container{
+	width : 80%;
+	height : 30px;
+	max-width: 950px;
+	padding-top : 25px;
+	margin : 0 auto;
+}
+
+#footer-container>div{
+	float : left;
+	width : 25%;
+	height : 100%;
+}
+
+#footer-images{
+	width : 10% !important;
+	height : 100%;
+}
+
+#footer-images > a{
+	width : 25px;
+	height : 25px;
+	
+	text-decoration: none;
+}
+
+#footer-images > a > img{
+	width : 25px;
+	height : 25px;
+}
+
+#footer-images > a > img:HOVER{
+	cursor: pointer;
+}
+
+#footer-tel{
+	width : 15% !important;
+	height : 100%;
+}
+
+#footer-tel>div, 
+#footer-address>div,
+#footer-email>div{
+	width : 100%;
+	height : auto;
+	
+	padding-top : 7px;
+	font-size: 12px;
+	line-height: 15px;
+	color : white;
+	font-family: 'Fira Sans', sans-serif;
+}
+
+#footer-address{
+	width : 35% !important;
+	height : 15px;
+	padding-right : 5%;
+}
+
+#footer-email{
+	width : 120px;
+	height : 15px;
 }

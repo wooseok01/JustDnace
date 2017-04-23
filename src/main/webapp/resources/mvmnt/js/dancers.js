@@ -3,6 +3,7 @@ $(document).ready(function(){
 	$('#nav-fixed>span').css('color','black');
 	
 	$('#menuIcon').click(menuIconClick);
+	$('#menuIcon, #toggleMenu').hover(menuMouseOver, menuMouseOut);
 	
 	headerBackground();
 	
@@ -91,4 +92,17 @@ function fadeOutClick(div){
 		 'overflow' : 'scroll'
 	  });
 	$('#layer').fadeOut('slow', function(){});
+}
+
+function moreDescriptionClick(div){
+	var gridDescription = $(div).parent().find('.grid-description');
+
+	if($(div).html() == 'More ▼'){
+		console.log('xx');
+		gridDescription.css('height', 'auto');
+		$(div).html('Less ▲');
+	}else{
+		gridDescription.css('height', '54px');
+		$(div).html('More ▼');
+	}
 }

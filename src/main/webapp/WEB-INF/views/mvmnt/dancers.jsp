@@ -22,9 +22,9 @@
 		<div>-</div>
 	</div>
 	
-	<div id="archive-section">
+	<ul id="archive-section">
 		<c:forEach var="dancer" items="${dancerList}">
-			<div class="grid-cell">
+			<li class="grid-cell">
 				<div class="grid-content">
 					<div class="img-div">
 						<img alt="grid-pic" class="dancer-img" 
@@ -35,10 +35,12 @@
 					<div class="grid-description">
 						${dancer.bDescription}
 					</div>
+					<div class="grid-more" onclick="moreDescriptionClick(this);">More ▼</div>
 				</div>
-			</div>
+			</li>
 		</c:forEach>
-	</div>
+	</ul>
+	
 	<div id="layer" onclick="fadeOutClick(this);">
 		<div id="layer-container">
 			<div>
@@ -53,6 +55,7 @@
 					</div>
 				</div>
 				<div id="career-section">
+					<div>Career</div>
 					<ul>
 						
 					</ul>

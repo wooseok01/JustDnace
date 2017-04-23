@@ -20,6 +20,8 @@ $(document).ready(function(){
 		menuIconClick(null);
 	});
 	
+	$('#menuIcon, #toggleMenu').hover(menuMouseOver, menuMouseOut);
+	
 	$(window).resize(function(){
 		var imageHeight = $('#image-rolling-banner>div>img').height();
 		var rollingWidth = $('#image-rolling-banner').width();

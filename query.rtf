@@ -1,0 +1,212 @@
+{\rtf1\ansi\ansicpg949\cocoartf1504\cocoasubrtf820
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset129 AppleSDGothicNeo-Regular;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 drop table dancers;\
+\
+create table dancers(\
+	bId int auto_increment primary key,\
+    bTitle varchar(100)  not null,\
+    bName varchar(30)  not null,\
+    bFileName varchar(30)  not null,\
+    bDescription varchar(1000) not null\
+)default character set utf8 collate utf8_general_ci;\
+\
+select * from dancers;\
+\
+insert into dancers(bTitle, bname, bFileName, bDescription) \
+values\
+('Ducky (Founder of JUSTDANCE)', 'Ducky', 'Bboy-Ducky.png','Studio Wayne McGregor
+\f1 \'b4\'c2
+\f0  
+\f1 \'c3\'a2\'c0\'c7\'c0\'fb\'c0\'ce
+\f0  
+\f1 \'bf\'b9\'bc\'fa
+\f0  
+\f1 \'b0\'f8\'b0\'a3\'c0\'bb
+\f0  
+\f1 \'bf\'ad\'be\'fa\'bd\'c0\'b4\'cf\'b4\'d9
+\f0 . 
+\f1 \'b4\'d9\'bb\'f3
+\f0  
+\f1 \'bc\'f6\'bb\'f3
+\f0  
+\f1 \'be\'c8\'b9\'ab\'b0\'a1
+\f0  Wayne McGregor CBE
+\f1 \'bf\'cd
+\f0  
+\f1 \'b1\'d7\'c0\'c7
+\f0  
+\f1 \'b9\'ab\'bf\'eb\'b4\'dc
+\f0  
+\f1 \'c8\'b8\'bb\'e7\'c0\'ce
+\f0  Wayne McGregor
+\f1 \'c0\'c7
+\f0  
+\f1 \'bb\'f5\'b7\'ce\'bf\'ee
+\f0  
+\f1 \'c8\'a8\'c0\'b8\'b7\'ce
+\f0  
+\f1 \'bf\'b9\'bc\'fa\'b0\'a1\'bf\'cd
+\f0  
+\f1 \'c4\'bf\'b9\'c2\'b4\'cf\'c6\'bc\'b8\'a6
+\f0  
+\f1 \'c0\'a7\'c7\'d1
+\f0  
+\f1 \'b0\'ed\'c0\'af\'c7\'d1
+\f0  
+\f1 \'b8\'ae\'bc\'d2\'bd\'ba\'b0\'a1
+\f0  
+\f1 \'b5\'c9
+\f0  
+\f1 \'b0\'cd\'c0\'d4\'b4\'cf\'b4\'d9
+\f0 . '),\
+('JOONYONG (JOONYONG. BAE)', 'JOONYOUNG', 'JOONYONG.png', 'JungYong is an artist who produces various performances and has excellent sense of lighting. also He\'92s Director of Digital content Arts Management '),\
+('Gunn (Kunhyung Kim)', 'Gunn', 'Gunn.png', 'Gunn is the best performer who mastered all Korean percussion instruments. '),\
+('Wasabi (Junghyun Ryu)', 'Wasabi', 'Wasabi.png', 'Wasabi is one of OG Dancer in Southkorea(since1995). he\'92s Pioneer of Korean Dance Culture. also he\'92s famous of Directing of Show and Performances '),\
+('Bboy Dol (Jinhyoung Park)', 'Dol', 'Bboy-Dol.png', 'I started dancing in 2002. i\'92m focusing for world wide bboy competition and workshops, judge as bboy. also i\'92m interesting of musical and model activity. '),\
+('Bboy FE (Chulje Oh)', 'FE', 'Bboy-FE.png', 'FE From Jinjo Crew, He\'92s also representing Justdance. he\'92s 17years only just doing bboying. he\'92s style is dynamic and very light movement. he as know well for Freeze combination and nowadays he doing judge and competion at world wide. '),\
+('Bboy Pop (Sungjin Hong)', 'Pop', 'Bboy-Pop.png', 'I started dancing in 1998. I have been a member of Gamblerz Crew since 2004 and have traveled to over 30 countries for competitions and showcases. I am also the founder of Strength Korea. '),\
+('Bboy Pocket (Gijoo Kim)', 'Pocket', 'Bboy-Pocket.png', ' Bboy Pocket is a young Powermove living legend from Korea. He started Breakin in 2005 at the young age of 9 and became recognized internationally for his unmatched speed and energy in his high risk skills. His unbelievable talent has got him the reputation as a team\'92s secret weapon which lead his teams to win many international titles. Many consider him to be an anomaly of the bboy culture as he continues to raise the level of difficulty throughout the entire world. ');\
+\
+drop table career;\
+create table career(\
+	cid int auto_increment primary key,\
+    bId int not null,\
+    cDescription varchar(200) not null,\
+    \
+    foreign key (bId) references dancers(bid)\
+)default character set utf8 collate utf8_general_ci;\
+\
+create table education(\
+	eId int auto_increment primary key,\
+    bId int,\
+    eDescription varchar(200) not null,\
+    \
+    foreign key (bId) references dancers(bid)\
+)default character set utf8 collate utf8_general_ci;\
+\
+select * from career;\
+\
+insert into career(bId, cDescription) values \
+(1,'2016 LETZDANCE Acamedy China Open '),\
+(1,'2015 ~ 2017 Leader of Representative of Seoul City B-boy Seoul  Foundation for Arts and Culture '),\
+(1,'2011 Kyunghee University Education Professor'),\
+(1,'2010, JUSTDANCE Production Found. '),\
+(1,'2010 LETZDANCE Academy Found. ( South Korea )'),\
+(1,'2009 Professor of University of Arts, Seoul National University'),\
+(1,'2009 FLOOR GANGZ WORLDWIDE section'),\
+(1,'2008 Promoted Ambassador of Korea Tourism Organization'),\
+(1,'Founded 2003 DRIFTERZ CREW'),\
+(1,'2003 MYOSUNG dancer activities'),\
+(1,'2002 PROJECT SOUL leader'),\
+(1,'Founded 2002 BOPSTER SCAT '),\
+(1,'2000, gorillas dancers Lee Juno and activities'),\
+(1,'1999 EXPRESSION CREW founding member '),\
+(1,'1996 PEOPLE CREW');\
+\
+insert into career(bId, cDescription) values\
+(2, 'Director of Digital content Arts Management '),\
+(2, 'Artistic Director of Seoul Dance Theatre '),\
+(2, 'Visiting Professor , KyungHee University.'),\
+(2, '2015  Remarkable Artist Award (The Korean Association of Critics)'),\
+(2, '2014 Best Choreographer of the Year Award (Korea Dance Forum,  Inc.)');\
+\
+insert into education(bId, eDescription) values\
+(2, '2015 Acquired doctoral degree'),\
+(2, '2012 Graduated from Kyunghee University');\
+\
+insert into career(bId, cDescription) values\
+(3, '2007 K-POP Drama Festival'),\
+(3, '2007 Joongang Univ. Korea Tour Performance 5 City'),\
+(3, '2008 President Lee Myung Bak\\'s inauguration ceremony'),\
+(3, '2010 RokJoo Park Awarded Grand Prix of Korean National Music Competition (Presidential Award)'),\
+(3, '2010 Vancouver, LA, Hawaii, Auckland, Sydney, Jakarta, Bangkok  and Manila, touring 8 destinations in 7 countries' ),\
+(3, '2011 Concert for Peace Unification in Bucheon '),\
+(3, '2013 New Zealand (Wellington), Australia (Sydney, Canberra) Three  City Cultural Delegation Performances '),\
+(3, '2013 Rufxxx \\'Deadman Walking\\\'92 Performance');\
+\
+insert into education(bId, eDescription) value\
+(3, '2013 Graduated from Korean Traditional Percussion at Chung-Ang University');\
+\
+\
+insert into career(bId, cDescription) values\
+(4, '2008 V.A.J.P (Visual Art Jam Performance) Dancers'),\
+(4, '2009-2010 M-NET OAP Dance Promotion Manager'),\
+(4, '2013 Korea Foundation South Africa Tour Arirang Rhapsody Dancer'),\
+(4, '2015 Korea Creative Content Agency Dancer'),\
+(4, '2016 Boy London 2016 SS Planing Director'),\
+(4, '2014 Louis Vuitton Performance Director'),\
+(4, '2015 Hermes Performance Dancer');\
+\
+insert into education(bId, eDescription) value\
+(4, '1998 Admitted to Dankook University, Department of LawDrop out of law School');\
+\
+insert into career(bId, cDescription) values\
+(5,'2014 France International Amazing Day battle winner'),\
+(5,'2015 USA BreakFree Winner'),\
+(5,'2015 R16 Malaysia Judge'),\
+(5,'2015 R16 Macau Judge'),\
+(5,'2015 R16 World Final Performance winner'),\
+(5,'2015 Battle of the year Korea winner'),\
+(5,'2015 China International Hustle & Freeze winner'),\
+(5,'2016 Marseille battle pro Korea qualification winner'),\
+(5,'2016 France International UNVSTIEVENT battle winner'),\
+(5,'2016 JeonJu GrandPrix 10th Anniversary winner'),\
+(5,'2016 China International B.I.S battle winner');\
+\
+\
+insert into education(bId, eDescription) value\
+(5, 'Broadcasting and Telecommunications University Attending of Department of Cultural Studies');\
+\
+insert into career(bId, cDescription) values\
+(6,'2016 Presidential tour'),\
+(6,'Korea Cultural Exchange in Uganda \\'K-CULTURE IN UGAND'),\
+(6,'2016 France BATTLE VNR - winner'),\
+(6,'2016 France BREAK THE FLOOR - winner'),\
+(6,'2015 Glory Surrender'),\
+(6,'Liberation 70th Anniversary London Festival Performaces Korea'),\
+(6,'2015 China BOMB JAM WORLD FINAL - winner'),\
+(6,'2012,2014 Italy FLUIDO JAM - winner'),\
+(6,'2012  UK B-BOY CHAMPIONSHIP WORLD FINAL - winner'),\
+(6,'2010,2011 Korea R-16 World Master Championships Performance & Crew Battle Winner'),\
+(6,'2010 BATTLE OF THE YEAR WORLD FINAL - winner');\
+\
+insert into education(bId, eDescription) values\
+(6,'2003 Graduated Daegu Yeongnam High School'),\
+(6,'2013 Attending of Daekyung University');\
+\
+insert into career(bId, cDescription) values\
+(7, 'October 22, 2005 BRAUNSCHWEIG, GERMANY   Won 3rd place of Battle of the Year'),\
+(7, 'February 18, 2005 OKINAWA, JAPAN Won 1st place at Street Style Festival'),\
+(7, 'February 19, 2005 OKINAWA, JAPAN  Participated in a guest show as representatives of Korea'),\
+(7, 'March, 2005 KOCHI, JAPAN Won 1st place at Bboy Festival Battle Royal '),\
+(7, 'March 25, 2007 KOCHI, JAPAN Won 1st place at Battle Runners Vol.4'),\
+(7, 'August 27, 2007 LOS ANGELES, UNITED STATES of AMERICA  Won 2nd place at FreeStyle Session'),\
+(7, 'April 5, 2008 LILLE, FRANCE Performed a showcase at Battle of the Year'),\
+(7, 'October 28, 2008 TAIWAN Participated in a guest show for FreeStyle Session'),\
+(7, 'December 6, 2008 NEW YORK, UNITED STATES of AMERICA  Won 1st place at Ill Skilled Kingz'),\
+(7, 'May 3, 2009 CHINA Won 1st place at Happy Valley Inter Bboy Championship  (Battle between China, Hong Kong, Macao)'),\
+(7, 'August 1, 2009   SINGAPORE     Won 2nd place at Battle of the Year Asia'),\
+(7, 'TELEVISION PROGRAMS July 14, 2010   KOREA  Participated in a MBC Documentary on Children who Love Bboying January 8, 2010 KOREA'),\
+(7, 'Participated in a KBS variety called Sponge 2.0');\
+\
+insert into education(bId, eDescription) value\
+(7, '2005 Graduated Jungwon High School');\
+\
+\
+insert into career(bId, cDescription) values\
+(8, '2016 The Dance Zurich Champion (Zurich, Switzerland)'),\
+(8, '2015 Hustle & Freeze 1 on 1 Bboy Champion (Shenzhen, China)'),\
+(8, '2015, 2014, 2013 Break The Floor Champion (Cannes, France)'),\
+(8, '2015 & 2013 World Powermove Series Champion (Dourdan, France)'),\
+(8, '2014 Universal Dancers Champion (France)'),\
+(8, '2013 International Royal Battle Champion (Germany)'),\
+(8, '2013 UK Bboy Championship Winner (Birmingham, UK)'),\
+(8, '2013 R16 World Finals Champion (Seoul, Korea)');\
+\
+insert into education(bId, eDescription) value\
+(8,'2008 Graduated Gunpo Elements School');}

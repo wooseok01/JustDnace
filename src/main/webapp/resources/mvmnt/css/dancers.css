@@ -1,4 +1,5 @@
 @CHARSET "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Palanquin+Dark|Roboto|Ubuntu+Condensed');
 
 html,body{
 	width : 100%;
@@ -7,12 +8,14 @@ html,body{
 
 body{
 	position : relative;
+	
 }
 
 #intro-archive{
 	width : 100%;
 	height : auto;
 	padding-top : 150px;
+	font-family: 'Palanquin Dark', sans-serif;
 }
 
 #intro-archive>div:FIRST-CHILD{
@@ -34,12 +37,13 @@ body{
 }
 
 .grid-cell{
-	width : calc(100%/3);
-	height : 500px;
+	width : calc(100%/3.2);
+	height : auto;
 	
 	margin-bottom : 20px;
 	
-	float : left;
+	display: inline-block;
+	vertical-align: top;
 	
 }
 
@@ -73,14 +77,15 @@ body{
 
 .grid-title{
 	width : 95%;
-	height : auto;
+	height : 30px;
 	margin : 0 auto;
 	
 	margin-bottom: 10px;
 	margin-top : 10px;
 	text-align: left;
 	
-	font-size : 14px;
+	font-family: "Palanquin Dark",sans-serif;
+	font-size : 13px;
 	font-weight: bold;
 	line-height : 15px;
 	letter-spacing: 2px;
@@ -95,10 +100,36 @@ body{
 .grid-description{
 	width : 95%;
 	margin : 0 auto;
+	height : 45px;
+	margin-bottom: 30px;
 	
-	font-size : 12px;
-	line-height : 18px;
+	font-family: 'Roboto', sans-serif;
+	font-size : 11px;
+	line-height : 15px;
 	text-align: left;
+	
+	
+	overflow: hidden;
+ 	text-overflow: ellipsis;
+ 	display: -webkit-box;
+	-webkit-line-clamp: 3; /* 라인수 */
+ 	-webkit-box-orient: vertical;
+ 	word-wrap:break-word;
+ 	
+}
+
+.grid-more{
+	width : 100%;
+	height : 30px;
+	text-align: center;
+	font-size : 12px;
+	font-weight: bold;
+	margin-top : 10px;
+	margin-bottom : 10px;
+}
+
+.grid-more:HOVER{
+	cursor : pointer;
 }
 
 #layer{
@@ -111,17 +142,19 @@ body{
 	position : absolute;
 	z-index : 900;
 	top : 0px;
-	
 	display : none;
 }
 
 #layer-container{
 	width : 70%;
-	height : 600px;
+	height : 90%;
 	
+	max-width : 1000px;
+	overflow-y : auto;
 	margin : 0 auto;
 	
 	background-color: rgba(0,0,0,0.8);
+	font-family: 'Roboto', sans-serif;
 }
 
 #layer-container >div{
@@ -133,18 +166,21 @@ body{
 	padding-top : 50px;
 }
 
-#layer-container>div>div{
+/* #layer-container>div>div{
 	float : left;
-}
+} */
 
 #image-section{
-	width : 40%;
-	height : 100%;
+	width : 60%;
+	height : auto;
+	
+	max-width: 600px;
+	margin : 0 auto;
+	
 }
 
 #select-image{
 	width : 100%;
-	height : 220px;
 	overflow : hidden;
 }
 
@@ -158,19 +194,22 @@ body{
 	padding-top : 20px;
 	
 	color : white;
-	text-align: center;
+	text-align: left;
+	
 }
 
 #title-section > div:FIRST-CHILD {
-	font-size: 19px;
-	font-weight: 400;
+	font-family: 'Palanquin Dark', sans-serif;
+	font-size: 25px;
+	font-weight: bold;
 	letter-spacing: 2px;
 	padding-top : 0px;
 }
 
 #title-section > div{
-	font-size : 15px;
+	font-size : 13px;
 	letter-spaceing : 1px;
+	
 	padding-top: 10px;
 }
 
@@ -180,11 +219,26 @@ body{
 }
 
 #career-section{
-	width : 50%;
-	height : 100%;
+	width : 60%;
+	height : auto;
+	max-width : 600px;
 	
-	margin-left : 8%;
+	margin : 0 auto;
+	margin-bottom: 30px;
+	color : white;
+	margin-top : 30px;
 }
+
+#career-section > div{
+	width : 100%;
+	
+	font-family: 'Palanquin Dark', sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	margin-bottom : 20px;
+}
+
 
 #career-section > ul{
 	width : 100%;

@@ -1,4 +1,6 @@
 @CHARSET "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Palanquin+Dark|Roboto|Ubuntu+Condensed');
+
 html,body{
 	width : 100%;
 	height : auto;
@@ -8,6 +10,7 @@ html,body{
 	width : 100%;
 	height : auto;
 	padding-top : 150px;
+	font-family: 'Palanquin Dark', sans-serif;
 }
 
 #intro-archive>div:FIRST-CHILD{
@@ -33,6 +36,7 @@ html,body{
 }
 #text-area>div{
 	font-size: 15px;
+	font-family: 'Fira Sans', sans-serif;
 }
 
 #text-area>div:FIRST-CHILD {
@@ -43,18 +47,19 @@ html,body{
 #grid-container{
 	width : 100%;
 	height : auto;
-	
-}
-
-#grid-container > div{
-	float : left;
+	display: inline-block;
+	padding: 0px;
+	margin: 0px;
 }
 
 .player-container{
-	width : 50%;
+	width : 49%;
 	height : auto;
 	
 	padding-bottom : 40px;
+	display: inline-block;
+	vertical-align: top;
+	
 }
 
 .player-thumnail{
@@ -98,6 +103,7 @@ html,body{
 }
 
 .description-title{
+	font-family: 'Palanquin Dark', sans-serif;
 	font-size : 15px;
 	font-weight: bold;
 	
@@ -105,9 +111,34 @@ html,body{
 }
 
 .description{
+	width : 100%;
+	height : 48px;
+	
+	font-family: 'Roboto', sans-serif;
 	font-size : 13px;
+	line-height : 16px;
+	
+	overflow: hidden;
+ 	text-overflow: ellipsis;
+ 	display: -webkit-box;
+	-webkit-line-clamp: 3; /* 라인수 */
+ 	-webkit-box-orient: vertical;
+ 	word-wrap:break-word;
 }
 
+.description-more{
+	width : 100%;
+	height : 20px;
+	
+	margin-top : 10px;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.description-more:HOVER{
+	cursor: pointer;
+}
 .video-icon{
 	width : 48px !important;
 	height : 48px;

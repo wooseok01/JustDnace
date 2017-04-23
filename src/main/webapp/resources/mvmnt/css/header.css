@@ -1,11 +1,11 @@
 @CHARSET "UTF-8";
-
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Palanquin+Dark');
 
 #nav-fixed{
 	width: 100%;
 	height: 50px !important;
 	
-	padding-top: 30px;
+	padding-top: 10px;
 	
 	position: fixed;
 	
@@ -17,6 +17,11 @@
 	text-align: center;
 	
 	
+}
+
+#nav-fixed>span{
+	height : 30px;
+	font-family: 'Palanquin Dark', sans-serif;
 }
 
 #nav-fixed>span:HOVER{
@@ -31,7 +36,7 @@
 	width : 25px;
 	height : 25px;
 	display: inline-block;
-	
+	margin-top : 13px;
 	margin-left: 30px;
 	position : absolute;
 	left: 5px;
