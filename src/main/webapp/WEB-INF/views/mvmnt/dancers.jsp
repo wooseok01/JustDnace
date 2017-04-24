@@ -13,7 +13,7 @@
 	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/async/2.3.0/async.js"></script>
 	<script type="text/javascript" src="resources/mvmnt/js/dancers.js"></script>
-	<title>JUSTDANCEMVMNT</title>
+	<title>JUSTDANCEMVMT</title>
 </head>
 <body>
 	<jsp:include page="header.jsp"></jsp:include>

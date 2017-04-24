@@ -9,7 +9,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsBy1zOEc8d1buJnhe5fgqkYhCo6kbFxo&callback=initMap"></script>
 	<script type="text/javascript" src="resources/mvmnt/js/contact.js"></script>
-	<title>JUSTDANCEMVMNT</title>
+	<title>JUSTDANCEMVMT</title>
 </head>
 <body>
 	<jsp:include page="header.jsp"></jsp:include>
