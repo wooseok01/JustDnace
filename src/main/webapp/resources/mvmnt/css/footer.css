@@ -18,7 +18,7 @@ footer{
 
 #footer-container>div{
 	float : left;
-	width : 25%;
+	width : auto;
 	height : 100%;
 }
 
@@ -44,8 +44,8 @@ footer{
 }
 
 #footer-tel{
-	width : 15% !important;
 	height : 100%;
+	margin-right : 10%;
 }
 
 #footer-tel>div, 
@@ -68,6 +68,5 @@ footer{
 }
 
 #footer-email{
-	width : 120px;
-	height : 15px;
+	float : right !important;
 }

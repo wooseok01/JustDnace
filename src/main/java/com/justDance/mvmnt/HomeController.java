@@ -121,8 +121,7 @@ public class HomeController {
 		String result = "";
 		try{
 			emailSender.sendEmail(email);
-//			result = "success!";
-			result = "fail!";
+			result = "success!";
 		}catch(Exception e){
 			result = "fail!";
 		}

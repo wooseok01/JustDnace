@@ -24,10 +24,16 @@ function descriptionMoreClick(div){
 	
 	if($(div).html() == 'More ▼'){
 		$(div).html('Less ▲');
-		description.css('height','auto');
+		description.css({
+			'height' : 'auto',
+			'line-clamp' : 'initial'
+		});
 	}else{
 		$(div).html('More ▼');
-		description.css('height', '48px');
+		description.css({
+			'height' : '48px',
+			'line-clamp' : '3'
+		});
 	}
 }
 

@@ -7,6 +7,13 @@ $(document).ready(function(){
 	
 	headerBackground();
 	
+	$(window).on('resize', function(){
+		$('.img-div').each(function(){
+			var imgHight = $(this).find('.dancer-img').height()*1;
+			$(this).height(imgHight);
+		});
+	});
+	
 	
 	$('.img-div, .grid-title').click(function(){
 		$('#layer').height($(window).height());
@@ -17,10 +24,8 @@ $(document).ready(function(){
 		var name;
 		if(thisObj.attr('class') == 'img-div'){
 			name = thisObj.find('.dancer-img').attr('name');
-			console.log(name);
 		}else{
 			name = thisObj.parent().find('.img-div>img').attr('name');
-			console.log(name);
 		}
 		
 		if(name != ''){
@@ -99,10 +104,16 @@ function moreDescriptionClick(div){
 
 	if($(div).html() == 'More ▼'){
 		console.log('xx');
-		gridDescription.css('height', 'auto');
+		gridDescription.css({
+			'height' : 'auto',
+			'line-clamp' : 'initial'
+		});
 		$(div).html('Less ▲');
 	}else{
-		gridDescription.css('height', '54px');
+		gridDescription.css({
+			'height' : '45px',
+			'line-clamp' : '3'
+		});
 		$(div).html('More ▼');
 	}
 }
