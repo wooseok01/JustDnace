@@ -27,7 +27,7 @@
 			<li class="grid-cell">
 				<div class="grid-content">
 					<div class="img-div">
-						<img alt="grid-pic" class="dancer-img" 
+						<img alt="grid-pic" class="dancer-img" onload="fitXY(this);"
 						src="resources/mvmnt/images/dancers/${dancer.bFileName}" name="${dancer.bName}">
 					</div>
 					

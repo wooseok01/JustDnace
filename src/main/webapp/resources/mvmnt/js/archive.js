@@ -1,5 +1,5 @@
 $(function(){
-	$(".youtube").YouTubeModal({autoplay:1, width:480, height:320});
+	$(".youtube").YouTubeModal({autoplay:1, width:640, height:480});
 	$(".video-icon").YouTubeModal({autoplay:1, width:640, height:480});
 });
 
@@ -50,5 +50,6 @@ function fitXY(image){
 	
 	if(imageHeight != 0){
 		thisObj.parent().find('.video-icon').css('top', imageHeight/2-24);
+		thisObj.parent().height(imageHeight);
 	}
 }

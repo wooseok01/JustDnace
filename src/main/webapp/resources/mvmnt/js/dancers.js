@@ -16,7 +16,14 @@ $(document).ready(function(){
 	
 	
 	$('.img-div, .grid-title').click(function(){
-		$('#layer').height($(window).height());
+		var filter = "win16|win32|win64|mac";
+
+		if (navigator.platform) {
+			$('#layer').height($(window).height()*1 + 120);
+		}else{
+			$('#layer').height($(window).height() - 50);
+		}
+		
 		  $('#layer').css({
 			  top : $(document).scrollTop()
 		  });
@@ -115,5 +122,17 @@ function moreDescriptionClick(div){
 			'line-clamp' : '3'
 		});
 		$(div).html('More ▼');
+	}
+}
+
+
+function fitXY(obj){
+	var filter = "win16|win32|win64|mac";
+	var imageHeight = $(obj).height()*1;
+	
+	if (navigator.platform) {
+		if(imageHeight != 0){
+			$(obj).parent().height(imageHeight);
+		}
 	}
 }

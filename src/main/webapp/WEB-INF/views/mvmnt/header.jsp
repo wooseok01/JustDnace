@@ -16,9 +16,9 @@
 			<img id="menuIcon" alt="menu-icon" 
 			src="resources/mvmnt/images/header/menu-white.png" active="no"> 
 			<span onclick="moveToMainPage()">JUSTDANCEMVMT</span>
-			<div id="toggleMenu">
+			<div id="toggleMenu" active="none">
 				<ul>
-					<li><a href="/mvmnt">Home</a></li>
+					<li><a href="/mvmt">Home</a></li>
 					<li><a href="./about">About</a></li>
 					<li><a href="./archive">Archive</a></li>
 					<li><a href="./dancers">Dancers</a></li>

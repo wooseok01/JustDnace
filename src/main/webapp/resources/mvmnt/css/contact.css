@@ -228,3 +228,46 @@ input{
 	width : 25%;
 	text-align: right;
 }
+
+/* 모바일 버전 css */
+@media screen and (max-width: 1200px){
+	#intro-contact > div{
+		font-size : 40px;
+	}
+	#contact-write-form{
+		height : auto;
+	}
+	
+	#contact-information>div:FIRST-CHILD>div{
+		font-size : 25px;
+		line-height : 30px;
+	}
+	
+	#nameAndEmail{
+		height : 73px;
+	}
+	
+	#nameAndEmail > div{
+		clear : left;
+		width : 100%;
+	}
+	
+	#nameAndEmail, #onlyTitle{
+		margin-bottom: 20px;
+	}
+	
+	.formLabel{
+		font-size : 20px;
+	}
+	
+	#messageForm > div{
+		font-size : 20px;
+		width : 80px;
+	}
+	
+	#sendBtn{
+		font-size : 25px;
+		height : 50px;
+		margin-bottom : 30px;
+	}
+}

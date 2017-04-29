@@ -210,5 +210,53 @@ html,body{
 	line-height : 15px;
 }
 
-
+/* 모바일 버전 css */
+@media screen and (max-width: 1200px){
+	#intro-about>div{
+		font-size : 40px !important;
+	}
+	
+	#pircture-section{
+		margin-bottom : 50px;
+	}
+	
+	#text-area{
+		height : 2800px;
+	}
+	
+	#text-area>div{
+		clear : left;
+		width : 100%;
+		height : auto;
+	}
+	
+	.text-title{
+		line-height : 35px;
+		font-size : 30px;
+	}
+	
+	.text-divide{
+		margin-top : 30px;
+		margin-bottom : 30px;
+	}
+	
+	.text-second-title{
+		font-size : 28px;
+		margin-bottom : 35px;
+	}
+	
+	.text-description,
+	.text-movie-large-description{
+		font-size : 24px;
+		line-height : 29px;
+	}
+	
+	.text-movie-small-description{
+		font-size : 18px;
+	}
+	
+	.text-movie-large-description{
+		margin-bottom : 50px;
+	}
+}
 

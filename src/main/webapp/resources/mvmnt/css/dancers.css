@@ -147,7 +147,7 @@ body{
 
 #layer-container{
 	width : 70%;
-	height : 90%;
+	height : 75%;
 	
 	max-width : 1000px;
 	overflow-y : auto;
@@ -253,4 +253,60 @@ body{
 	
 	font-size : 13px;
 	margin-bottom : 3.2px;
+}
+
+
+/* 모바일 버전 css */
+@media screen and (max-width: 1200px){
+	#intro-archive > div{
+		font-size : 40px;
+	}
+	
+	#archive-section{
+		height : 6500px;
+	}
+	
+	.grid-cell{
+		display : block;
+		width : 100%;
+		margin-bottom : 45px;
+	}
+	
+	.grid-title{
+		font-size : 25px;
+		margin-top : 20px;
+	}
+	
+	.grid-description{
+		font-size : 20px;
+		line-height : 24px;
+	}
+	
+	#layer{
+		height : 120%;
+	}
+	
+	#layer-container{
+		width : 85%;
+	}
+	
+	#image-section,
+	#career-section{
+		width : 75%;
+	}
+	
+	#title-section > div:FIRST-CHILD,
+	#career-section > div{
+		font-size : 30px;
+	}
+	
+	#title-section > div{
+		font-size : 22px;
+		line-height : 26px;
+		padding-top : 35px;
+	}
+	
+	#career-section > ul > li{
+		font-size : 22px;
+	}
 }
