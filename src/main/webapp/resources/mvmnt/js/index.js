@@ -15,16 +15,20 @@ $(document).ready(function() {
 	});
 	
 	var filter = "win16|win32|win64|mac";
-
-	if (navigator.platform) {
-		if (0 > filter.indexOf(navigator.platform.toLowerCase())) {
-			$('#menuIcon').click(function() {
-				menuIconClick(null);
-			});
-		}else{
-			$(window).on('scroll', headerColorChange);
-			$('#menuIcon, #toggleMenu').hover(menuMouseOver, menuMouseOut);
-		}
+	if( navigator.userAgent.match(/Android/i)
+			 || navigator.userAgent.match(/webOS/i)
+			 || navigator.userAgent.match(/iPhone/i)
+			 || navigator.userAgent.match(/iPad/i)
+			 || navigator.userAgent.match(/iPod/i)
+			 || navigator.userAgent.match(/BlackBerry/i)
+			 || navigator.userAgent.match(/Windows Phone/i)
+			 ){
+		$('#menuIcon').click(function() {
+			menuIconClick(null);
+		});
+	}else{
+		$(window).on('scroll', headerColorChange);
+		$('#menuIcon, #toggleMenu').hover(menuMouseOver, menuMouseOut);
 	}
 
 

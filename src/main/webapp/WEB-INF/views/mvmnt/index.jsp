@@ -55,12 +55,10 @@
 	
 	<div id="banner-description">
 		<div id="first-description" >
-			<div>Based at Here East in Queen Elizabeth Olympic Park and designed by architectural practice We Not I, Studio Wayne McGregor comprises three dance studios, including two of the largest in London, and a series of playful spaces in which to collaborate, make and create. The first arts organisation to be based on Queen Elizabeth Olympic Park, it is a place for making, developing creative practice, and collaboration across arts, science, technology and research</div>
-			<div>Based at Here East in Queen Elizabeth Olympic Park and designed by architectural practice We Not I, Studio Wayne McGregor comprises three dance studios, including two of the largest in London, and a series of playful spaces in which to collaborate, make and create. The first arts organisation to be based on Queen Elizabeth Olympic Park, it is a place for making, developing creative practice, and collaboration across arts, science, technology and research</div>
+			<div>Just Dance is a Global Dance & Culture campagin Team. All art has transcended it's era with deep connection with each other, which proposes the hyphothesis in creation of a new culture; Just Dance is to express all the art forms that we love by the Performance & Media. We want to sympathize with each other emotionally and show, joy and anger together with sorrow and pleasure, by culture.</div>
 		</div>
 		<div id="second-description">
-			<div>A cornerstone programme for Studio Wayne McGregor is FreeSpace, a major new artist development and community engagement programme which will support artists to explore innovation in new directions, form an artists’ incubation and innovation community, and provide inspiring learning opportunities led by professional practising artists to thousands of participants each year</div>
-			<div>Based at Here East in Queen Elizabeth Olympic Park and designed by architectural practice We Not I, Studio Wayne McGregor comprises three dance studios, including two of the largest in London, and a series of playful spaces in which to collaborate, make and create. The first arts organisation to be based on Queen Elizabeth Olympic Park, it is a place for making, developing creative practice, and collaboration across arts, science, technology and research</div>
+			<div>&lt;Justdance&gt; is a group of various unique artists. "Drifterz Crew" represent the group and is creating projects which magnificently display the beauty of Korea in cooperation with Seoul Foundation for Arts and Culture, Korea Tourism Organization, Ministry of Foreign Affairs, and Korea Foundation</div>
 		</div>
 	</div>
 	<jsp:include page="footer.jsp"></jsp:include>
